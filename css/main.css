@@ -18,7 +18,7 @@
 
 .navbar{
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px;
     width: 80%;
     margin-left: 7.5%;
@@ -30,7 +30,7 @@
 }
 
 .logo img{
-    width: 70%;
+    width: 75%;
     margin-left: 8%;
 }
 
@@ -55,6 +55,7 @@
     font-family: 'Poppins', serif;
     font-size: 1.3vw;
     font-weight: 600;
+    color: #D32D4F;
 }
 
 @font-face {
@@ -65,5 +66,42 @@
 h1{
     text-align: center;
     font-family: 'Porter Sans Black';
+    color: #fff;
+    font-size: 3vw;
 }
 
+a{
+    text-decoration: none;
+    color: #2B2868;
+}
+
+.item a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Kalam, Arial;
+    font-weight: 700;
+    position: relative;
+    border-bottom: 2px solid #2B2868;
+}
+
+.item a:hover{
+    top: -0.16em;
+    transition: padding .5s, top .35s, box-shadow .4s;
+    box-shadow: 0 0.4rem 0 -0.2rem #D32D4F;
+}
+
+.mainh h1{
+    color: #D32D4F;
+    text-align: left;;
+    margin: 0;
+    margin-top: 30%;
+    margin-left: 5%;
+}
+
+.mainh h2{
+    margin: 0;
+    margin-left: 5%;
+    font-size: 1.8vw;
+    font-family: 'Poppins', serif;
+    color: #2B2868;
+}
