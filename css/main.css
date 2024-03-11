@@ -1,6 +1,6 @@
 .mainBack{
     background-image: url(../assets/Images/homePageHeader.png);
-    height: 883px;
+    height: 88.3vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,9 +9,61 @@
 
 .headerBack{
     background-image: url(../assets/Images/headerBack.png);
-    height: 350px;
+    height: 35vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 7.5%;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.logo img{
+    width: 70%;
+    margin-left: 8%;
+}
+
+.linkNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search{
+    padding-left: 50%;
+}
+
+.item{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.active{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Porter Sans Black';
+    src: url(../assets/Fonts/porter-sans-inline-block-webfont.woff);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Porter Sans Black';
+}
+
