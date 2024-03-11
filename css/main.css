@@ -1,0 +1,17 @@
+.mainBack{
+    background-image: url(../assets/Images/homePageHeader.png);
+    height: 883px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.headerBack{
+    background-image: url(../assets/Images/headerBack.png);
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
