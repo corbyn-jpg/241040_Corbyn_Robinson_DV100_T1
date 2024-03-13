@@ -186,7 +186,7 @@ h3{
 .book button{
     width: 50%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-style: none;
 
     font-family: 'Poppins', serif;
@@ -207,4 +207,49 @@ h3{
 
 .shuttleImg{
     padding: 5%;
+}
+
+.peak{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.sneakPeaks{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+@media(max-width: 800px) {
+    .sneakPeaks{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.trip{
+    padding: 10px;
+}
+
+.trip img{
+    width: 20vw;
+}
+
+.peak button{
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5vh;
+
+    font-family: 'Poppins', serif;
+    font-size: 1.4vw;
+    background-color: #D32D4F;
+    color: #fff;
+}
+
+.footerItem{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    font-weight: 600;
 }
