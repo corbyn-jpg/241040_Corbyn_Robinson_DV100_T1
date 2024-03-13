@@ -248,8 +248,88 @@ h3{
     color: #fff;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+footer p{
+    color: #2B2868;
+}
+
+.topFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerLogo{
+    margin: 0;
+    width: 33%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.footerLogo img{
+    width: 60%;
+    margin: 0;
+}
+
+.footerLogo p{
+    width: 50%;
+}
+
+.footerNav{
+    width: 33%;
+    text-align: center;
+}
+
+.footerText{
+    font-weight: 600;
+}
+
 .footerItem{
     font-family: 'Poppins', serif;
     font-size: 1.3vw;
-    font-weight: 600;
+    padding: 1%;
+    color: #2B2868;
+}
+
+.footerActive{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    padding: 1%;
+    color: #2B2868;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.mediaLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+.mediaLinks a{
+    padding: 2%;
+}
+
+.mediaLinks img{
+    width: 80px;
+}
+
+.bottomFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.rules{
+    display: flex;
+    flex-direction: row;
 }
