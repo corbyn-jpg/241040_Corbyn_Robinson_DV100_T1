@@ -117,10 +117,58 @@ a{
     margin-left: 5%;
 }
 
+h2{
+    font-family: 'Poppins', serif;
+    font-size: 1.8vw;
+}
+
 .mainh h2{
     margin: 0;
     margin-left: 5%;
-    font-size: 1.8vw;
-    font-family: 'Poppins', serif;
     color: #2B2868;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sliderImg{
+    position: relative;
+    padding: 5%;
+    padding-left: 10%;
+    border-radius: 10px;
+}
+
+.sliderImg img{
+    width: 800px;
+}
+
+.leftArrow img{
+    position: absolute;
+    bottom: 48%;
+    left: 18%;
+    width: 40px;
+}
+
+.rightArrow img{
+    position: absolute;
+    bottom: 48%;
+    right: 10%;
+    width: 40px;
+}
+
+p{
+    font-family: 'Poppins', serif;
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+.book h1{
+    font-family: 'Poppins', serif;
+}
+
+.book h2{
+    color: #4451c9;
 }
