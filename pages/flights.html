@@ -4,7 +4,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>HTML Template</title>
+            <title>Red Planet Ventures - Flights</title>
             <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Template">
             <meta name="author" content="Corbyn, Robinson, 241040">
 
@@ -36,7 +36,42 @@
                 </nav>
 
                 <h1>Book a Flight</h1>
-
             </header>
+
+            <section class="filter">
+                <div class="filterResults">
+                    <img src="../assets/Images/filter.png">
+
+                    <p>Filter</p>
+                    <hr/>
+                    <p>Showing 6 - 32 results</p>
+                </div>
+                <div class="filterOptions">
+                    <div class="perPage">
+                        <label for="resultsPerPage">Show:</label>
+                        <select id="resultsPerPage">
+                            <option value="6" selected>6</option>
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="32">32</option>
+                        </select>
+                    </div>
+                
+                    <div class="sortBy">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy">
+                            <option value="default" selected>Default</option>
+                            <option value="priceLowToHigh">Price Low to High</option>
+                            <option value="priceHighToLow">Price High to Low</option>
+                            <option value="dateNewestFirst">Date Newest First</option>
+                            <option value="dateOldestFirst">Date Oldest First</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                
+            </section>
         </body>
     </html>

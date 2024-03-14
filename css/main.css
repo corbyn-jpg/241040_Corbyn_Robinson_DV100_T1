@@ -124,7 +124,7 @@ a{
     color: #D32D4F;
     text-align: left;;
     margin: 0;
-    margin-top: 30%;
+    margin-top: 25%;
     margin-left: 5%;
 }
 
@@ -246,6 +246,95 @@ h3{
     font-size: 1.4vw;
     background-color: #D32D4F;
     color: #fff;
+}
+
+.filter{
+    background-color: #2B2868;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filterResults{
+    font-family: 'Poppins', serif;
+    font-size: 1.5vw;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.filterResults img{
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.filterResults p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+hr{
+    height: 35px;
+}
+
+.filterOptions{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sortBy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#resultsPerPage{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    color: #4451c9;
+    background-color: #fff;
+    padding: 5%;
+
+    border-radius: 10px; 
+}
+
+#sortBy{
+    font-family: 'Poppins', serif;
+    font-size: 1.3vw;
+    color: #4451c9;
+    background-color: #fff;
+    padding: 5%;
+
+    border-radius: 10px;
+}
+
+.filter label{
+    padding-right: 10%;
 }
 
 footer{
