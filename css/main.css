@@ -281,7 +281,7 @@ h3{
     padding-right: 20px;
 }
 
-hr{
+.filter hr{
     height: 35px;
 }
 
@@ -335,6 +335,59 @@ hr{
 
 .filter label{
     padding-right: 10%;
+}
+
+.planetPurple{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+
+.availableText{
+    padding: 5%;
+}
+
+.planetPurple img{
+    width: 50vw;
+}
+
+.planetBlue{
+    background-color: #2B2868;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+
+.planetBlue img{
+    width: 30vw;
+}
+
+.bookNow{
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5vh;
+
+    font-family: 'Poppins', serif;
+    font-size: 1.4vw;
+    background-color: #D32D4F;
+    color: #fff;
+}
+
+.cart{
+    width: 30%;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: none;
+
+    font-family: 'Poppins', serif;
+    font-size: 1.4vw;
+    background-color: #D32D4F;
+    color: #fff;
+    float: right;
 }
 
 footer{
@@ -422,3 +475,5 @@ footer p{
     display: flex;
     flex-direction: row;
 }
+
+
