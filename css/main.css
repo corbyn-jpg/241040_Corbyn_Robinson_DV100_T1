@@ -14,7 +14,7 @@ body{
 
 .headerBack{
     background-image: url(../assets/Images/headerBack.png);
-    height: 35vh;
+    height: 30vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -337,11 +337,19 @@ h3{
     padding-right: 10%;
 }
 
+.available{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
 .planetPurple{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
-    padding: 5%;
+    justify-items: center;
 }
 
 .availableText{
@@ -349,15 +357,16 @@ h3{
 }
 
 .planetPurple img{
-    width: 50vw;
+    width: 30vw;
 }
 
 .planetBlue{
     background-color: #2B2868;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
-    padding: 5%;
+    justify-items: center;
 }
 
 .planetBlue img{
@@ -365,7 +374,7 @@ h3{
 }
 
 .bookNow{
-    width: 20%;
+    width: 30%;
     padding: 20px;
     border-radius: 15px;
     border-style: none;
@@ -378,7 +387,7 @@ h3{
 }
 
 .cart{
-    width: 30%;
+    width: 40%;
     padding: 20px;
     border-radius: 15px;
     border-style: none;
@@ -388,6 +397,115 @@ h3{
     background-color: #D32D4F;
     color: #fff;
     float: right;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 8%;
+}
+
+.about img{
+    width: 40vw;
+    padding-left: 12%;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftInfo{
+    width: 60%;
+    text-align: center;
+}
+
+.socialMediaPages{
+    display: flex;
+    flex-direction: column;
+}
+
+.mediaPages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mediaPages a{
+    padding: 2%;
+}
+
+.mediaPages img{
+    width: 120px;
+}
+
+.maps h2{
+    margin-bottom: 0%;
+    margin-top: 10%;
+}
+
+.maps h3{
+    margin-top: 0%;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+.rightInfo{
+    width: 50%;
+    height: 150vh;
+    background-image: url(../assets/Images/formBack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 20px;
+}
+
+.rightInfo h3{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.rightInfo form{
+    margin-left: 8%;
+}
+
+.rightInfo label{
+    font-family: 'Poppins', serif;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.rightInfo input, textarea{
+    font-family: 'Poppins', serif;
+    font-size: 1.2vw;
+    background-color: #fff;
+    padding: 5%;
+    margin-bottom: 5%;
+
+    width: 85%;
+    border-radius: 10px;
+}
+
+.rightInfo button{
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-bottom: 10%;
+
+    font-family: 'Poppins', serif;
+    font-size: 1.4vw;
+    background-color: #D32D4F;
+    color: #fff;
+}
+
+.contact{
+    background-color: #D1B9D9;
 }
 
 footer{
@@ -469,11 +587,15 @@ footer p{
 .bottomFooter{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .rules{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 25%;
 }
 
 
