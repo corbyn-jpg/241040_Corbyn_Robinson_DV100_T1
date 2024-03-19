@@ -41,8 +41,8 @@
 
             <section class="about">
                 <div class="aboutText">
-                    <h2>ABOUT</h2>
-                    <h3>RED PLANET VENTURES</h3>
+                    <h3>ABOUT</h3>
+                    <h2>RED PLANET VENTURES</h2>
                     <p>Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realities. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to the diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventure. With a commitment to safety, innovation, and customer satisfaction, we strive to exceed expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures.</p>
                 </div>
 
@@ -54,8 +54,8 @@
             <section class="info">
                 <div class="leftInfo">
                     <div class="socialMediaPages">
-                        <h2>CONTACT US THROUGH OUR</h2>
-                        <h3>SOCIAL MEDIA PAGES</h3>
+                        <h3>CONTACT US THROUGH OUR</h3>
+                        <h2>SOCIAL MEDIA PAGES</h2>
                         <div class="mediaPages">
                             <a href="https://www.instagram.com/openwindowinstitute/?hl=en" target="_blank" class="hyperlink"><img src="../assets/Images/smInstagram.png"></a>
                             <a href="https://twitter.com/open_window_" target="_blank" class="hyperlink"><img src="../assets/Images/smX.png"></a>
@@ -65,38 +65,44 @@
                     </div>
 
                     <div class="maps">
-                        <h2>OR VISTIT US AT OUR</h2>
-                        <h3>PHYSICAL LOCATION</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.284834883716!2d28.2095316!3d-25.8918092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1710433145040!5m2!1sen!2sza" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h3>OR VISTIT US AT OUR</h3>
+                        <h2>PHYSICAL LOCATION</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.284834883716!2d28.2095316!3d-25.8918092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1710433145040!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
                 <div class="rightInfo">
-                    <h3>SEND US A FORM</h3>
-                    <form action="#" method="post">
-                        <label for="name">Your name:</label><br>
-                        <input type="text" id="name" name="name" required><br><br>
-
-                        <label for="email">Email address:</label><br>
-                        <input type="email" id="email" name="email" value="abc@def.com" required><br><br>
-
-                        <label for="subject">Subject:</label><br>
-                        <input type="text" id="subject" name="subject" value="This is optional"><br><br>
-
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" required>Hi! I'd like to ask about ABC</textarea><br><br>
-
-                        <button type="submit">Submit</button>
-                    </form>
+                    <form id="contact">
+                        <h2>SEND US A FORM</h2>
+                        <fieldset>
+                            <label for="name">Your name:</label><br>
+                            <input placeholder="Your name" type="text" tabindex="1" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email address:</label><br>
+                            <input placeholder="Your email" type="email" id="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="subject">Subject:</label><br>
+                            <input placeholder="Subject" type="text" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="message">Message:</label><br>
+                            <textarea placeholder="Hi! I'd like to ask about ABC" id="message" name="message" tabindex="4"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit" tabindex="5">Submit</button>
+                        </fieldset>
+                    </form>                
                 </div>
             </section>
             
-            <footer class="contact">
+            <footer class="contactPage">
                 <div class="topFooter">
                     <div class="footerLogo">
                         <img src="../assets/Images/logo.png" alt="Logo">
                         <br/>
-                        <p>Offering unforgettable trips to explore planets in our solar system.</p>
+                        <p>Offering unforgettable trips to explore <br/> planets in our solar system.</p>
                     </div>
 
                     <div class="footerNav">
