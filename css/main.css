@@ -483,6 +483,10 @@ fieldset{
     border: medium none !important;
     margin: 0;
     width: 90%;
+
+    font-family: 'Poppins', serif;
+    font-size: 22px;
+    color: #fff;
 }
 
 .rightInfo input, textarea{
