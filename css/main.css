@@ -134,13 +134,13 @@ a{
     font-family: Kalam, Arial;
     font-weight: 700;
     position: relative;
-    border-bottom: 2px solid #2B2868;
+    border-bottom: 3px solid #2B2868;
 }
 
 .item a:hover{
     top: -0.16em;
     transition: padding .5s, top .35s, box-shadow .4s;
-    box-shadow: 0 0.4rem 0 -0.2rem #D32D4F;
+    box-shadow: 0 0.4rem 0 -0.15rem #D32D4F;
 }
 
 .mainh h1{
