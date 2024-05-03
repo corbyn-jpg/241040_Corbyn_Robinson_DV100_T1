@@ -20,12 +20,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 20px;
 }
 
 .navbar{
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 30px;
-    padding: 10px;
+    padding: 15px;
     width: 80%;
     margin: 0 0 0 7.5%;
     align-items: center;
@@ -63,14 +64,14 @@ body{
     border-bottom-left-radius: 10px;
     border-style: none;
 
-    height: 50px;
-    width: 300px;
+    height: 45px;
+    width: 220px;
     margin: auto 0 auto 10%;
 }
 
 .search button{
     width: 50px;
-    height: 52px;
+    height: 47px;
     margin: 0;
     background-color: #fff;
     border-top-left-radius: 0;
@@ -311,24 +312,26 @@ p{
     flex-direction: row;
     align-items: center;
 
-    padding: 0 30px 0;
+    padding: 0 20px 0;
+    white-space: nowrap;
 }
 
 #resultsPerPage{
-    font-size: 25px;
+    font-size: 22px;
     color: #7c65e4;
     background-color: #fff;
     padding: 5%;
+    margin-left: 5%;
 
     border-radius: 12px; 
     cursor: pointer;
 }
 
 #sortBy{
-    font-size: 25px;
+    font-size: 20px;
     color: #7c65e4;
     background-color: #fff;
-    padding: 5%;
+    padding: 4%;
 
     border-radius: 12px;
     cursor: pointer;
@@ -341,7 +344,7 @@ label{
 }
 
 .filter label{
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .available{
@@ -519,6 +522,11 @@ footer p{
     color: #2B2868;
 }
 
+footer hr{
+    width: 90%;
+    margin: 3%;
+}
+
 .topFooter{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -527,6 +535,10 @@ footer p{
     flex-direction: row;
     align-items: center;
     margin: 0;
+}
+
+.topFooter a:hover{
+    cursor: pointer;
 }
 
 .footerLogo{
