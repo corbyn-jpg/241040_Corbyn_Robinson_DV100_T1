@@ -358,10 +358,6 @@ label{
     gap: 20px;
 }
 
-.available img:hover{
-    transform: scale(1.05);
-}
-
 .planetPurple, .planetBlue{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
