@@ -382,6 +382,13 @@ span{
     vertical-align: middle;
 }
 
+.minus:hover, .plus:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #7c65e4;
+    transition: all 0.5s ease-in;
+}
+
 .number input{
     height: 40px;
     width: 100px;
