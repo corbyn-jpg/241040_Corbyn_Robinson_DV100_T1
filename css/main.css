@@ -188,20 +188,12 @@ h3{
     height: 649px;
 }
 
-.leftArrow img{
-    position: absolute;
-    bottom: 50%;
-    left: 22%;
-    width: 40px;
-    height: 40px;
+.carousel button{
+    margin: auto 0;
 }
 
-.rightArrow img{
-    position: absolute;
-    bottom: 50%;
-    right: 12%;
-    width: 40px;
-    height: 40px;
+.carousel button:hover{
+    background-color: transparent;
 }
 
 p{
