@@ -229,29 +229,16 @@ p{
     height: 477px;
 }
 
-.peak{
+.peak {
     text-align: center;
     margin: 5% auto auto;
 }
 
-.sneakPeaks{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-@media(max-width: 800px) {
-    .sneakPeaks{
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
 .trip{
-    padding: 10px;
+    padding: 20px;
 }
 
-.trip a:hover{
+.trip a:hover {
     color: #7c65e4;
 }
 
