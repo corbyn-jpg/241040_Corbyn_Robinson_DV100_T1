@@ -444,45 +444,41 @@ span{
     float: right;
 }
 
-.about{
-    display: flex;
-    flex-direction: row;
+.about {
     padding: 8% 8% 0;
 }
 
-.about img{
+.about img {
     width: 609px;
-    margin: auto auto auto 10%;
+    height: 609px;
+    margin: auto auto auto 15%;
 }
 
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.info {
+    padding: 5% 0;
 }
 
-.leftInfo{
-    width: 100%;
+.leftInfo {
     text-align: center;
 }
 
-.socialMediaPages{
+.socialMediaPages {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 
-.mediaPages{
+.mediaPages {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.mediaPages a{
+.mediaPages a {
     padding: 2%;
 }
 
-.mediaPages img{
+.mediaPages img {
     width: 97px;
     height: 97px;
 }
@@ -493,46 +489,36 @@ iframe{
     height: 534px;
 }
 
-.rightInfo{
-    width: 100%;
-    padding: 5%;
+.rightInfo {
+    padding: 0 5%;
 }
 
-#contact{
+#contact {
     background-image: url(../assets/Images/formBack.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
     border-radius: 20px;
-    padding: 5em;
-    margin: 50px 0;
+    padding: 2em;
 }
 
-fieldset{
+fieldset {
     border: medium none !important;
     margin: 0;
     width: 90%;
-
-    font-family: 'Poppins', serif;
-    font-size: 22px;
-    color: #fff;
 }
 
-.rightInfo input, textarea{
-    font-family: 'Poppins', serif;
-    font-size: 18px;
+.rightInfo input, .rightInfo textarea {
     background-color: #f7e8fc;
     padding: 5%;
-    margin: auto auto 5%;
-
-    width: 100%;
+    margin-bottom: 5%;
     border-radius: 12px;
 }
 
-.rightInfo textarea{
+.rightInfo textarea {
     resize: none;
 }
+
 
 footer{
     display: flex;
