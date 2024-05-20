@@ -6,12 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
         updateResultsPerPage(selectedValue);
     });
 
+    // Event listener for changes in the sorting option selection
     document.getElementById("sortBy").addEventListener("change", function() {
         var selectedValue = this.value;
         console.log("Sort By:", selectedValue);
         updateSortLayout(selectedValue);
     });
 
+    // Function to update the number of results displayed per page
     function updateResultsPerPage(numPerPage) {
         var planets = document.querySelectorAll(".available > .planetPurple, .available > .planetBlue");
         planets.forEach(function(planet, index) {
@@ -23,77 +25,71 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-var originalOrder = Array.from(document.querySelectorAll('.planetPurple, .planetBlue'));
+    // Array to store the original order of planets
+    var originalOrder = Array.from(document.querySelectorAll('.planetPurple, .planetBlue'));
 
-function resetLayout() {
-    var availableSection = document.querySelector('.available');
-    availableSection.innerHTML = ''; // Clear the existing content
-    originalOrder.forEach(function(planet) {
-        availableSection.appendChild(planet);
-    });
-}
-
-var originalOrder = Array.from(document.querySelectorAll('.planetPurple, .planetBlue'));
-
-function resetLayout() {
-    var availableSection = document.querySelector('.available');
-    availableSection.innerHTML = '';
-    originalOrder.forEach(function(planet) {
-        availableSection.appendChild(planet);
-    });
-}
-
-function updateSortLayout(sortOption) {
-    var sortedPlanets;
-    if (sortOption === 'default') {
-        resetLayout();
-        return;
+    // Function to reset the layout to the original order
+    function resetLayout() {
+        var availableSection = document.querySelector('.available');
+        availableSection.innerHTML = ''; // Clear the existing content
+        originalOrder.forEach(function(planet) {
+            availableSection.appendChild(planet);
+        });
     }
-    var planets = document.querySelectorAll('.planetPurple, .planetBlue');
-    planets = Array.from(planets);
-    switch (sortOption) {
-        case 'priceLowToHigh':
-            sortedPlanets = planets.sort(function(a, b) {
-                var priceA = parseFloat(a.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
-                var priceB = parseFloat(b.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
-                return priceA - priceB;
-            });
-            break;
-        case 'priceHighToLow':
-            sortedPlanets = planets.sort(function(a, b) {
-                var priceA = parseFloat(a.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
-                var priceB = parseFloat(b.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
-                return priceB - priceA;
-            });
-            break;
-        case 'dateNewestFirst':
-            sortedPlanets = planets.sort(function(a, b) {
-                var dateA = new Date(parseDate(a.querySelector('.availableText p:last-of-type').innerText));
-                var dateB = new Date(parseDate(b.querySelector('.availableText p:last-of-type').innerText));
-                return dateA - dateB;
-            });
-            break;
-        case 'dateOldestFirst':
-            sortedPlanets = planets.sort(function(a, b) {
-                var dateA = new Date(parseDate(b.querySelector('.availableText p:last-of-type').innerText));
-                var dateB = new Date(parseDate(a.querySelector('.availableText p:last-of-type').innerText));
-                return dateA - dateB;
-            });
-            break;
-        default:
-            sortedPlanets = planets;
-    }
-    var availableSection = document.querySelector('.available');
-    availableSection.innerHTML = '';
-    sortedPlanets.forEach(function(planet) {
-        availableSection.appendChild(planet);
-    });
-}
 
-function parseDate(dateString) {
-    var dates = dateString.split(' - ');
-    return dates[1];
-}
+    // Function to update the layout based on the selected sorting option
+    function updateSortLayout(sortOption) {
+        var sortedPlanets;
+        if (sortOption === 'default') {
+            resetLayout();
+            return;
+        }
+        var planets = document.querySelectorAll('.planetPurple, .planetBlue');
+        planets = Array.from(planets);
+        switch (sortOption) {
+            case 'priceLowToHigh':
+                sortedPlanets = planets.sort(function(a, b) {
+                    var priceA = parseFloat(a.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
+                    var priceB = parseFloat(b.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
+                    return priceA - priceB;
+                });
+                break;
+            case 'priceHighToLow':
+                sortedPlanets = planets.sort(function(a, b) {
+                    var priceA = parseFloat(a.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
+                    var priceB = parseFloat(b.querySelector('.availableText h3').innerText.replace(/[^\d.-]/g, ''));
+                    return priceB - priceA;
+                });
+                break;
+            case 'dateNewestFirst':
+                sortedPlanets = planets.sort(function(a, b) {
+                    var dateA = new Date(parseDate(a.querySelector('.availableText p:last-of-type').innerText));
+                    var dateB = new Date(parseDate(b.querySelector('.availableText p:last-of-type').innerText));
+                    return dateA - dateB;
+                });
+                break;
+            case 'dateOldestFirst':
+                sortedPlanets = planets.sort(function(a, b) {
+                    var dateA = new Date(parseDate(b.querySelector('.availableText p:last-of-type').innerText));
+                    var dateB = new Date(parseDate(a.querySelector('.availableText p:last-of-type').innerText));
+                    return dateA - dateB;
+                });
+                break;
+            default:
+                sortedPlanets = planets;
+        }
+        var availableSection = document.querySelector('.available');
+        availableSection.innerHTML = '';
+        sortedPlanets.forEach(function(planet) {
+            availableSection.appendChild(planet);
+        });
+    }
+
+    // Function to parse date from a string
+    function parseDate(dateString) {
+        var dates = dateString.split(' - ');
+        return dates[1];
+    }
 });
 
 
@@ -101,11 +97,13 @@ function parseDate(dateString) {
 document.addEventListener("DOMContentLoaded", function() {
     const numberContainers = document.querySelectorAll('.number');
     
+    // Adding event listeners for plus and minus buttons
     numberContainers.forEach(container => {
         const numberInput = container.querySelector('input[type="text"]');
         const minusBtn = container.querySelector('.btn.minus');
         const plusBtn = container.querySelector('.btn.plus');
         
+        // Event listener for the minus button
         minusBtn.addEventListener("click", function() {
             let currentValue = parseInt(numberInput.value);
             if (currentValue > 0) {
@@ -117,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         
+        // Event listener for the plus button
         plusBtn.addEventListener("click", function() {
             let currentValue = parseInt(numberInput.value);
             if (currentValue < parseInt(numberInput.max)) {
