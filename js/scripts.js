@@ -1,3 +1,6 @@
+
+
+//Plus/minus button code
 document.addEventListener("DOMContentLoaded", function() {
     const numberContainers = document.querySelectorAll('.number');
     

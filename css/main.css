@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /*padding at top and menu*/
     padding-top: 20px;
 }
 
@@ -20,6 +21,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /*padding at top and menu*/
     padding-top: 20px;
 }
 
@@ -64,12 +66,14 @@ body{
     border-bottom-left-radius: 10px;
     border-style: none;
 
+    /*Shortened search bar*/
     height: 45px;
     width: 220px;
     margin: auto 0 auto 10%;
 }
 
 .search button{
+    /*Shortened search bar*/
     width: 50px;
     height: 47px;
     margin: 0;
@@ -149,6 +153,7 @@ a{
 .mainh h1{
     color: #D32D4F;
     text-align: left;;
+    /*Changed the margin to vh to make it dynamic*/
     margin: 54vh 5vh auto;
 }
 
@@ -514,6 +519,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    /*padding to the footer*/
     padding: 50px;
 }
 
