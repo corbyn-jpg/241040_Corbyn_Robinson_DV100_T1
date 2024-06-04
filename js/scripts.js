@@ -94,40 +94,96 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //Plus/minus button code
-document.addEventListener("DOMContentLoaded", function() {
-    const numberContainers = document.querySelectorAll('.number');
-    
-    // Adding event listeners for plus and minus buttons
-    numberContainers.forEach(container => {
-        const numberInput = container.querySelector('input[type="text"]');
-        const minusBtn = container.querySelector('.btn.minus');
-        const plusBtn = container.querySelector('.btn.plus');
-        
-        // Event listener for the minus button
-        minusBtn.addEventListener("click", function() {
-            let currentValue = parseInt(numberInput.value);
-            if (currentValue > 0) {
-                numberInput.value = currentValue - 1;
-                plusBtn.removeAttribute("disabled");
-            }
-            if (currentValue === 1) {
-                this.setAttribute("disabled", "disabled");
-            }
-        });
-        
-        // Event listener for the plus button
-        plusBtn.addEventListener("click", function() {
-            let currentValue = parseInt(numberInput.value);
-            if (currentValue < parseInt(numberInput.max)) {
-                numberInput.value = currentValue + 1;
-                minusBtn.removeAttribute("disabled");
-            }
-            if (currentValue === parseInt(numberInput.max) - 1) {
-                this.setAttribute("disabled", "disabled");
-            }
-        });
-    });
-});
+function decreasesMars(){
+    if(document.getElementById('marsTickets').value != 0){
+        document.getElementById('marsTickets').value = parseInt(document.getElementById('marsTickets').value) - 1;
+    }else{
+        document.getElementById('marsTickets').value = 0;
+    }
+}
+
+function increasesMars(){
+    document.getElementById('marsTickets').value = parseInt(document.getElementById('marsTickets').value) + 1;
+}
+
+function decreasesNeptune(){
+    if(document.getElementById('neptuneTickets').value != 0){
+        document.getElementById('neptuneTickets').value = parseInt(document.getElementById('neptuneTickets').value) - 1;
+    }else{
+        document.getElementById('neptuneTickets').value = 0;
+    }
+}
+
+function increasesNeptune(){
+    document.getElementById('neptuneTickets').value = parseInt(document.getElementById('neptuneTickets').value) + 1;
+}
+
+function decreasesJupiter(){
+    if(document.getElementById('jupiterTickets').value != 0){
+        document.getElementById('jupiterTickets').value = parseInt(document.getElementById('jupiterTickets').value) - 1;
+    }else{
+        document.getElementById('jupiterTickets').value = 0;
+    }
+}
+
+function increasesJupiter(){
+    document.getElementById('jupiterTickets').value = parseInt(document.getElementById('jupiterTickets').value) + 1;
+}
+
+function decreasesSaturn(){
+    if(document.getElementById('saturnTickets').value != 0){
+        document.getElementById('saturnTickets').value = parseInt(document.getElementById('saturnTickets').value) - 1;
+    }else{
+        document.getElementById('saturnTickets').value = 0;
+    }
+}
+
+function increasesSaturn(){
+    document.getElementById('ticketsSaturn').value = parseInt(document.getElementById('ticketsSaturn').value) + 1;
+}
+
+function decreasesUranus(){
+    if(document.getElementById('uranusTickets').value != 0){
+        document.getElementById('uranusTickets').value = parseInt(document.getElementById('uranusTickets').value) - 1;
+    }else{
+        document.getElementById('uranusTickets').value = 0;
+    }
+}
+
+function increasesUranus(){
+    document.getElementById('uranusTickets').value = parseInt(document.getElementById('uranusTickets').value) + 1;
+}
+
+function decreasesMoon(){
+    if(document.getElementById('moonTickets').value != 0){
+        document.getElementById('moonTickets').value = parseInt(document.getElementById('moonTickets').value) - 1;
+    }else{
+        document.getElementById('moonTickets').value = 0;
+    }
+}
+
+function increasesMoon(){
+    document.getElementById('moonTickets').value = parseInt(document.getElementById('moonTickets').value) + 1;
+}
+
+let totalMarsCost = 0;
+let totalNeptuneCost = 0;
+let totalJupiterCost = 0;
+let totalSaturnCost = 0;
+let totalUranusCost = 0;
+let totalMoonCost = 0;
+let totalCost = 0;
+
+function total(){
+    totalMarsCost = parseInt(document.getElementById('marsTickets').value) * 50000;
+    totalNeptuneCost = parseInt(document.getElementById('neptuneTickets').value) * 45000;
+    totalJupiterCost = parseInt(document.getElementById('jupiterTickets').value) * 65000;
+    totalSaturnCost = parseInt(document.getElementById('saturnTickets').value) * 40000;
+    totalUranusCost = parseInt(document.getElementById('uranusTickets').value) * 50000;
+    totalMoonCost = parseInt(document.getElementById('moonTickets').value) * 15000;
+    totalCost = totalMarsCost + totalNeptuneCost + totalJupiterCost + totalSaturnCost + totalUranusCost + totalMoonCost;
+    console.log(totalCost);
+}
 
 const imagePaths = [
     "../assets/Images/flighhtMars.png",
