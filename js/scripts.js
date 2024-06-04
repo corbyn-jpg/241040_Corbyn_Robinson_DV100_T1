@@ -175,6 +175,7 @@ let totalUranusCost = 0;
 let totalMoonCost = 0;
 let totalCost = 0;
 
+// Calculates the total cost of tickets of planets and updates the modal with the costs
 function total(){
     totalMarsCost = parseInt(document.getElementById('marsTickets').value) * 50000;
     totalNeptuneCost = parseInt(document.getElementById('neptuneTickets').value) * 45000;
@@ -183,9 +184,11 @@ function total(){
     totalUranusCost = parseInt(document.getElementById('uranusTickets').value) * 50000;
     totalMoonCost = parseInt(document.getElementById('moonTickets').value) * 15000;
     totalCost = totalMarsCost + totalNeptuneCost + totalJupiterCost + totalSaturnCost + totalUranusCost + totalMoonCost;
-    console.log(totalCost);
 
+    // Gets the modal body element
     const modalBody = document.getElementById('cartModalBody');
+
+    // Updates the modal body with the calculated costs
     modalBody.innerHTML = `
         <div>
             <p>Mars: <span>${totalMarsCost}</span></p>
@@ -221,6 +224,7 @@ function total(){
     `;
 }
 
+// Updates the inputs in the modal
 function updateModalInputs() {
     document.getElementById('marsModalInput').value = parseInt(document.getElementById('marsTickets').value);
     document.getElementById('neptuneModalInput').value = parseInt(document.getElementById('neptuneTickets').value);
@@ -231,12 +235,13 @@ function updateModalInputs() {
     total();
 }
 
+// Updates the ticket input for a specific planet.
 function updateTicketInput(planet, value) {
     document.getElementById(`${planet}Tickets`).value = value;
     total();
 }
 
-// Open Cart Modal
+// Opens Cart Modal
 function openCartModal() {
     total();
     var myModal = new bootstrap.Modal(document.getElementById('cartModal'), {
@@ -245,7 +250,7 @@ function openCartModal() {
     myModal.show();
 }
 
-// Checkout function (for the "Checkout" button)
+// Checkout function
 function checkout() {
     window.location.href = "../index.html";
 }
@@ -259,7 +264,7 @@ const imagePaths = [
     "../assets/Images/flightMoon.png"
 ];
 
-// Function loads images dynamically
+// Loads images dynamically
 function loadImages() {
     const pictureContainers = document.querySelectorAll(".pictureContainer img");
 
