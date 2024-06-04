@@ -184,6 +184,56 @@ function total(){
     totalMoonCost = parseInt(document.getElementById('moonTickets').value) * 15000;
     totalCost = totalMarsCost + totalNeptuneCost + totalJupiterCost + totalSaturnCost + totalUranusCost + totalMoonCost;
     console.log(totalCost);
+
+    const modalBody = document.getElementById('cartModalBody');
+    modalBody.innerHTML = `
+        <div>
+            <p>Mars: <span>${totalMarsCost}</span></p>
+            <input type="number" id="marsModalInput" value="${parseInt(document.getElementById('marsTickets').value)}" min="0" max="30" onchange="updateTicketInput('mars', this.value)">
+        </div>
+        <br/>
+        <div>
+            <p>Neptune: <span>${totalNeptuneCost}</span></p>
+            <input type="number" id="neptuneModalInput" value="${parseInt(document.getElementById('neptuneTickets').value)}" min="0" max="30" onchange="updateTicketInput('neptune', this.value)">
+        </div>
+        <br/>
+        <div>
+            <p>Jupiter: <span>${totalJupiterCost}</span></p>
+            <input type="number" id="jupiterModalInput" value="${parseInt(document.getElementById('jupiterTickets').value)}" min="0" max="30" onchange="updateTicketInput('jupiter', this.value)">
+        </div>
+        <br/>
+        <div>
+            <p>Saturn: <span>${totalSaturnCost}</span></p>
+            <input type="number" id="saturnModalInput" value="${parseInt(document.getElementById('saturnTickets').value)}" min="0" max="30" onchange="updateTicketInput('saturn', this.value)">
+        </div>
+        <br/>
+        <div>
+            <p>Uranus: <span>${totalUranusCost}</span></p>
+            <input type="number" id="uranusModalInput" value="${parseInt(document.getElementById('uranusTickets').value)}" min="0" max="30" onchange="updateTicketInput('uranus', this.value)">
+        </div>
+        <br/>
+        <div>
+            <p>Moon: <span>${totalMoonCost}</span></p>
+            <input type="number" id="moonModalInput" value="${parseInt(document.getElementById('moonTickets').value)}" min="0" max="30" onchange="updateTicketInput('moon', this.value)">
+        </div>
+        <br/>
+        <div><p>Total: $ ${totalCost}</p></div>
+    `;
+}
+
+function updateModalInputs() {
+    document.getElementById('marsModalInput').value = parseInt(document.getElementById('marsTickets').value);
+    document.getElementById('neptuneModalInput').value = parseInt(document.getElementById('neptuneTickets').value);
+    document.getElementById('jupiterModalInput').value = parseInt(document.getElementById('jupiterTickets').value);
+    document.getElementById('saturnModalInput').value = parseInt(document.getElementById('saturnTickets').value);
+    document.getElementById('uranusModalInput').value = parseInt(document.getElementById('uranusTickets').value);
+    document.getElementById('moonModalInput').value = parseInt(document.getElementById('moonTickets').value);
+    total();
+}
+
+function updateTicketInput(planet, value) {
+    document.getElementById(`${planet}Tickets`).value = value;
+    total();
 }
 
 // Open Cart Modal
@@ -199,8 +249,6 @@ function openCartModal() {
 function checkout() {
     window.location.href = "../index.html";
 }
-
-
 
 const imagePaths = [
     "../assets/Images/flighhtMars.png",
