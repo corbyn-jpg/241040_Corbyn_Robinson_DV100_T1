@@ -41,32 +41,28 @@
                 <h1 class="headerh">Book a Flight</h1>
             </header>
 
-            <section class="filter">
-                <div class="filterResults">
-                    <img src="../assets/Images/filter.png">
-
-                    <p id="filterP">Filter</p>
-
-                    <!--Added filter bar items-->
-                    <img src="../assets/Images/fourDots.png">
-                    <img src="../assets/Images/filterThing.png">
-                    <hr/>
-                    <p>Showing 1 - 9 results</p>
+            <section class="filter container-fluid align-items-center">
+                <div class="filterResults d-flex align-items-center">
+                    <img src="../assets/Images/filter.png" class="img-fluid" width="35" height="35">
+                    <p class="filterP">Filter</p>
+                    <img src="../assets/Images/fourDots.png" class="img-fluid" width="35" height="35">
+                    <img src="../assets/Images/filterThing.png" class="img-fluid" width="35" height="35">
+                    <hr class="my-2">
+                    <p class="filterP">Showing 1 - 9 results</p>
                 </div>
-                <div class="filterOptions">
-                    <div class="perPage">
+                <div class="filterOptions d-flex align-items-center">
+                    <div class="perPage d-flex align-items-center px-3">
                         <label for="resultsPerPage">Show:</label>
-                        <select id="resultsPerPage">
+                        <select id="resultsPerPage" class="custom-select">
                             <option value="1">1</option>
                             <option value="3">3</option>
                             <option value="6" selected>6</option>
                             <option value="9">9</option>
                         </select>
                     </div>
-                
-                    <div class="sortBy">
+                    <div class="sortBy d-flex align-items-center px-3">
                         <label for="sortBy">Sort by:</label>
-                        <select id="sortBy">
+                        <select id="sortBy" class="custom-select">
                             <option value="default" selected>Default</option>
                             <option value="priceLowToHigh">Price Low to High</option>
                             <option value="priceHighToLow">Price High to Low</option>
@@ -81,7 +77,7 @@
                 <div class="planetPurple">
                     <!--Changing the effects on the images-->
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flighhtMars.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p>Mars has the tallest volcano in the solar system, Olympus Mons, which stands about 22 kilometers (13.6 miles) high, nearly three times the height of Mount Everest.</p></div>
                           </div>
@@ -109,7 +105,7 @@
 
                 <div class="planetBlue">
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flightNeptune.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p>Neptune has the strongest winds in the solar system, with speeds reaching up to 2,100 kilometers per hour (1,300 miles per hour).</p></div>
                           </div>
@@ -136,7 +132,7 @@
 
                 <div class="planetPurple">
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flightJupiter.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p>Jupiter has the Great Red Spot, a giant storm that has been raging for at least 400 years and is so large that three Earths could fit inside it.</p></div>
                           </div>
@@ -163,7 +159,7 @@
 
                 <div class="planetBlue">
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flightSaturn.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p> Saturn's rings are incredibly thin relative to their width. Though they span up to 282,000 kilometers (175,000 miles) across, they are only about 10 meters (30 feet) thick.</p></div>
                           </div>
@@ -190,7 +186,7 @@
 
                 <div class="planetPurple">
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flightUranus.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p>Uranus is unique in that it rotates on its side, with an axial tilt of about 98 degrees, likely due to a massive collision with an Earth-sized object long ago.</p></div>
                           </div>
@@ -217,7 +213,7 @@
 
                 <div class="planetBlue">
                     <div class="pictureContainer">
-                        <img src="../assets/Images/flightMoon.png">
+                        <img>
                         <div class="overlay">
                             <div class="text"><p>The Moon is slowly drifting away from Earth at a rate of about 3.8 centimeters (1.5 inches) per year. This is due to tidal interactions between the Earth and the Moon. As the Moon's gravity creates tides on Earth, the energy transferred between the Earth and Moon is causing the Moon to gradually spiral outward.</p></div>
                           </div>

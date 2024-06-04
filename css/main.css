@@ -181,7 +181,7 @@ img{
     color: #2B2868;
 }
 
-.slider{
+#slider{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,14 +207,14 @@ img{
     background-color: transparent;
 }
 
-p{
+p, li{
     font-family: 'Poppins', serif;
     font-size: 18px;
     font-weight: 400;
     color: #fff;
 }
 
-.shuttles{
+#shuttles{
     background-color: #2B2868;
     display: flex;
     flex-direction: row;
@@ -233,7 +233,7 @@ p{
     height: 477px;
 }
 
-.peak {
+#peak {
     text-align: center;
     margin: 5% auto auto;
 }
@@ -251,95 +251,85 @@ p{
     height: 278px;
 }
 
-.filter{
+.filter {
     background-color: #2B2868;
     height: 10vh;
-
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.filterResults{
+.filterResults {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
 }
 
-.filterResults img{
-    width: 25px;
-    height: 25px;
-    padding: 0 20px 0;
+.filterResults img {
+    margin: 0 20px 0;
 }
 
-.filterResults p{
+.filterResults p {
     padding: 0 10px 0;
     font-size: 22px;
 }
 
-#filterP{
-    padding-left: 0%;
+.filterP{
+    margin-top: 2%;
 }
 
-.filter hr{
+.filter hr {
     height: 35px;
+    border: 1px solid white;
+    margin: 0 15px;
 }
 
-.filterOptions{
+.filterOptions {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
-.perPage{
+.perPage {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
     padding: 0 30px 0;
 }
 
-.sortBy{
+.sortBy {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
     padding: 0 20px 0;
     white-space: nowrap;
 }
 
-#resultsPerPage{
+#resultsPerPage {
     font-size: 22px;
     color: #7c65e4;
     background-color: #fff;
     padding: 5%;
     margin-left: 5%;
-
-    border-radius: 12px; 
-    cursor: pointer;
-}
-
-#sortBy{
-    font-size: 20px;
-    color: #7c65e4;
-    background-color: #fff;
-    padding: 4%;
-
     border-radius: 12px;
     cursor: pointer;
 }
 
-label{
+#sortBy {
+    font-size: 20px;
+    color: #7c65e4;
+    background-color: #fff;
+    padding: 4%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+label {
     font-family: 'Poppins', serif;
     font-size: 22px;
     color: #fff;
 }
 
-.filter label{
+.filter label {
     padding-right: 5%;
 }
+
 
 .available{
     display: grid;

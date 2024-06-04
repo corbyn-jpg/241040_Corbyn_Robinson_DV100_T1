@@ -128,3 +128,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+const imagePaths = [
+    "../assets/Images/flighhtMars.png",
+    "../assets/Images/flightNeptune.png",
+    "../assets/Images/flightJupiter.png",
+    "../assets/Images/flightSaturn.png",
+    "../assets/Images/flightUranus.png",
+    "../assets/Images/flightMoon.png"
+];
+
+// Function loads images dynamically
+function loadImages() {
+    const pictureContainers = document.querySelectorAll(".pictureContainer img");
+
+    pictureContainers.forEach((img, index) => {
+        img.src = imagePaths[index];
+    });
+}
+
+// Calls the function
+document.addEventListener("DOMContentLoaded", loadImages);
