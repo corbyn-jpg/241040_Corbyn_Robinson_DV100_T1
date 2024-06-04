@@ -166,6 +166,7 @@ function increasesMoon(){
     document.getElementById('moonTickets').value = parseInt(document.getElementById('moonTickets').value) + 1;
 }
 
+//Total cost code
 let totalMarsCost = 0;
 let totalNeptuneCost = 0;
 let totalJupiterCost = 0;
@@ -184,6 +185,22 @@ function total(){
     totalCost = totalMarsCost + totalNeptuneCost + totalJupiterCost + totalSaturnCost + totalUranusCost + totalMoonCost;
     console.log(totalCost);
 }
+
+// Open Cart Modal
+function openCartModal() {
+    total();
+    var myModal = new bootstrap.Modal(document.getElementById('cartModal'), {
+        keyboard: false
+    });
+    myModal.show();
+}
+
+// Checkout function (for the "Checkout" button)
+function checkout() {
+    window.location.href = "../index.html";
+}
+
+
 
 const imagePaths = [
     "../assets/Images/flighhtMars.png",
