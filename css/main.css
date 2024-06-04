@@ -133,6 +133,18 @@ a{
     color: #2B2868;
 }
 
+input{
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: #D32D4F;
+    color: #fff;
+    border: none;
+}
+
 .item a {
     text-decoration: none;
     text-transform: capitalize;
@@ -609,4 +621,43 @@ footer hr{
     flex-direction: row;
     justify-content: space-evenly;
     width: 25%;
+}
+
+.modal-content {
+    background-color: #2B2868;
+    border-radius: 20px;
+}
+
+.modal-header {
+    background-color: #D32D4F;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.modalFooter button {
+    width: 45%;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.shop {
+    background-color: #D32D4F;
+    border: none;
+}
+
+.checkout {
+    background-color: #7c65e4;
+    border: none;
 }
