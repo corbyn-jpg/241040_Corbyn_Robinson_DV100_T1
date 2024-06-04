@@ -302,6 +302,10 @@ p, li{
     align-items: center;
 }
 
+.filter img{
+    border-radius: 0;
+}
+
 .perPage {
     display: flex;
     align-items: center;
