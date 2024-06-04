@@ -217,7 +217,7 @@ function total(){
             <input type="number" id="moonModalInput" value="${parseInt(document.getElementById('moonTickets').value)}" min="0" max="30" onchange="updateTicketInput('moon', this.value)">
         </div>
         <br/>
-        <div><p>Total: $ ${totalCost}</p></div>
+        <div><p>Total: R ${totalCost}</p></div>
     `;
 }
 
