@@ -244,10 +244,10 @@ function updateTicketInput(planet, value) {
 // Opens Cart Modal
 function openCartModal() {
     total();
-    var myModal = new bootstrap.Modal(document.getElementById('cartModal'), {
+    var myCartModal = new bootstrap.Modal(document.getElementById('cartModal'), {
         keyboard: false
     });
-    myModal.show();
+    myCartModal.show();
 }
 
 // Checkout function
@@ -275,3 +275,10 @@ function loadImages() {
 
 // Calls the function
 document.addEventListener("DOMContentLoaded", loadImages);
+
+function openSubmitModal() {
+    var mySubmitModal = new bootstrap.Modal(document.getElementById('submitModal'), {
+        keyboard: false
+    });
+    mySubmitModal.show();
+}
