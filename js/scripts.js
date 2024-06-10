@@ -276,6 +276,8 @@ function loadImages() {
 // Calls the function
 document.addEventListener("DOMContentLoaded", loadImages);
 
+
+//Second modal code
 let form = document.forms["contact"];
 
 form.addEventListener("submit", openSubmitModal);
@@ -286,4 +288,39 @@ function openSubmitModal(event) {
         keyboard: false
     });
     mySubmitModal.show();
+}
+
+//Search bar function
+
+document.getElementById('searchbar').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        let input = document.getElementById('searchbar').value.toLowerCase();
+        // Navigate to the flights page with the search query as a URL parameter
+        window.location.href = `pages/flights.html?search=${encodeURIComponent(input)}`;
+    }
+});
+
+function searchbar() {
+    let input = document.getElementById('searchbar').value.toLowerCase();
+
+    // Creating an object with the planets
+    const planetAnchors = {
+        'mars': '#marsAnchor',
+        'neptune': '#neptuneAnchor',
+        'jupiter': '#jupiterAnchor',
+        'saturn': '#saturnAnchor',
+        'uranus': '#uranusAnchor',
+        'moon': '#moonAnchor'
+    };
+
+    // Iterate over each planet to find a match with the input
+    for (let planetId in planetAnchors) {
+        let planetAnchor = document.querySelector(planetAnchors[planetId]);
+
+        // Check if the input matches the current planet ID
+        if (planetId.toLowerCase().includes(input)) {
+            planetAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            break;
+        }
+    }
 }
