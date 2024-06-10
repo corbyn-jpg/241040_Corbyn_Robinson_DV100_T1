@@ -276,7 +276,12 @@ function loadImages() {
 // Calls the function
 document.addEventListener("DOMContentLoaded", loadImages);
 
-function openSubmitModal() {
+let form = document.forms["contact"];
+
+form.addEventListener("submit", openSubmitModal);
+
+function openSubmitModal(event) {
+    event.preventDefault();
     var mySubmitModal = new bootstrap.Modal(document.getElementById('submitModal'), {
         keyboard: false
     });
