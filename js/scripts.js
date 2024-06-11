@@ -319,7 +319,7 @@ function searchbar() {
 
         // Check if the input matches the current planet ID
         if (planetId.toLowerCase().includes(input)) {
-            planetAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            planetAnchor.scrollIntoView({block: 'start' });
             break;
         }
     }
