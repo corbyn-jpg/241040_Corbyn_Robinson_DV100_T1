@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
 //Plus/minus button code
 function decreasesMars(){
     if(document.getElementById('marsTickets').value != 0){
@@ -139,7 +138,7 @@ function decreasesSaturn(){
 }
 
 function increasesSaturn(){
-    document.getElementById('ticketsSaturn').value = parseInt(document.getElementById('ticketsSaturn').value) + 1;
+    document.getElementById('saturnTickets').value = parseInt(document.getElementById('saturnTickets').value) + 1;
 }
 
 function decreasesUranus(){
